@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mb-4">Coding Tracker</h1>
+        
+        <div id="userInputs">
+            <label for="leetcodeId" class="form-label">LeetCode ID</label>
+            <input type="text" id="leetcodeId"  class="form-control mb-2" placeholder="Enter LeetCode ID">
+            
+            <label for="githubId" class="form-label">GitHub ID</label>
+            <input type="text" id="githubId" class="form-control mb-2" placeholder="Enter GitHub ID">
+            
+            <label for="codeforcesId" class="form-label">CodeForces ID</label>
+            <input type="text" id="codeforcesId" class="form-control mb-2" placeholder="Enter CodeForces ID">
+            
+            <label for="linkedinId" class="form-label">LinkedIn Username</label>
+            <input type="text" id="linkedinId" class="form-control mb-2" placeholder="Enter LinkedIn Username">
+            
+            <label for="gfgId" class="form-label">GeeksforGeeks Username</label>
+            <input type="text" id="gfgId" class="form-control mb-2" placeholder="Enter GeeksforGeeks Username">
+            
+            <label for="codechefId" class="form-label">CodeChef Username</label>
+            <input type="text" id="codechefId" class="form-control mb-2" placeholder="Enter CodeChef Username">
+        </div>
+        
+        <button class="btn btn-primary mt-3" onclick="fetchProgress()">Track Progress</button>
+        
+        <div id="progress" class="mt-4"></div>
+    </div>
+</body>
+</html>
